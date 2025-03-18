@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25 + 5 Clock</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>25 + 5 Clock</h1>
+    
+    <div class="length-controls">
+      <div class="break-controls">
+        <div id="break-label">Break Length</div>
+        <div class="controls">
+          <button id="break-decrement"><i class="fas fa-arrow-down"></i></button>
+          <div id="break-length">5</div>
+          <button id="break-increment"><i class="fas fa-arrow-up"></i></button>
+        </div>
+      </div>
+      
+      <div class="session-controls">
+        <div id="session-label">Session Length</div>
+        <div class="controls">
+          <button id="session-decrement"><i class="fas fa-arrow-down"></i></button>
+          <div id="session-length">25</div>
+          <button id="session-increment"><i class="fas fa-arrow-up"></i></button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="timer">
+      <div id="timer-label">Session</div>
+      <div id="time-left">25:00</div>
+      <div class="timer-controls">
+        <button id="start_stop"><i class="fas fa-play"></i><i class="fas fa-pause"></i></button>
+        <button id="reset"><i class="fas fa-sync"></i></button>
+      </div>
+    </div>
+  </div>
+  
+  <audio id="beep" src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"></audio>
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
